@@ -6,10 +6,8 @@ import java.util.concurrent.locks.ReentrantLock;
  * lock.getHoldCount()方法：只能在当前调用线程内部使用，不能再其他线程中使用
  * 那么我可以在run1方法里去调用run2方法，同时run1方法和run2方法都持有lock锁定即可 测试结果holdCount数递增
 **
-* @author: Kevin
-* @官网: 	www.mimaxueyuan.com
-* @Q Q群:	660567408
-* @Email:	mimaxueyuan@163.com
+* 
+
 
 */
 public class HoldCountTest {

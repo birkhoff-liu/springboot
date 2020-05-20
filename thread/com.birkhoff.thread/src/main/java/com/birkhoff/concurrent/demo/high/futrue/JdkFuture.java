@@ -6,10 +6,8 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.FutureTask;
 /**
-* @author: Kevin
-* @官网: 	www.mimaxueyuan.com
-* @Q Q群:	660567408
-* @Email:	mimaxueyuan@163.com
+* 
+
 
 */
 public class JdkFuture implements Callable<String>{

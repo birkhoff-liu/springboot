@@ -13,10 +13,8 @@ package com.birkhoff.concurrent.demo.high.futrue;
 /** 
  * 接收请求的控制器(例如接收PC端请求)
  * 
-* @author: Kevin
- * @官网: 	www.mimaxueyuan.com
- * @Q Q群:	660567408
- * @Email:	mimaxueyuan@163.com
+* 
+
 
  */
 public class FutureController {

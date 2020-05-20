@@ -9,10 +9,8 @@ import java.util.concurrent.ConcurrentLinkedQueue;
  * 不断的从队列中获取任务->处理->保存结果
  * 
 *
-* @author: Kevin
-* @官网: 	www.mimaxueyuan.com
-* @Q Q群:	660567408
-* @Email:	mimaxueyuan@163.com
+* 
+
 
 */
 public class Worker implements Runnable {

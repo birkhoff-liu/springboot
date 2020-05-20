@@ -5,10 +5,8 @@ package com.birkhoff.concurrent.demo.high.masterworker;
  * 模拟任务实体
  * 
 *
-* @author: Kevin
-* @官网: 	www.mimaxueyuan.com
-* @Q Q群:	660567408
-* @Email:	mimaxueyuan@163.com
+* 
+
 
 */
 public class Task {

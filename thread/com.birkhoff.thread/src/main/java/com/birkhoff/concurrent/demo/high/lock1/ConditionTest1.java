@@ -6,10 +6,8 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
-* @author: Kevin
-* @官网: 	www.mimaxueyuan.com
-* @Q Q群:	660567408
-* @Email:	mimaxueyuan@163.com
+* 
+
 
 */
 public class ConditionTest1 {

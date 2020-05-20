@@ -2,10 +2,8 @@ package com.birkhoff.concurrent.demo.high.futrue;
 
 /**
  * 
-* @author: Kevin
- * @官网: 	www.mimaxueyuan.com
- * @Q Q群:	660567408
- * @Email:	mimaxueyuan@163.com
+* 
+
 
  */
 public class Main {

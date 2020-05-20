@@ -29,10 +29,8 @@ import java.util.concurrent.TimeUnit;
  * take 读取头元素并移除,如果队列为空,则永远阻塞,不抛出异常 
  * drainTo 取出queue中指定个数（或全部）的元素放入list中,并移除，当队列为空时不抛出异常
  * 
-* @author: Kevin
- * @官网: 	www.mimaxueyuan.com
- * @Q Q群:	660567408
- * @Email:	mimaxueyuan@163.com
+* 
+
 
  */
 public class DemoThread30 {

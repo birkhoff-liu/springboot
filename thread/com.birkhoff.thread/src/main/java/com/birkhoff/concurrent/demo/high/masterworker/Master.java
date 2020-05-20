@@ -13,10 +13,8 @@ import java.util.concurrent.ConcurrentLinkedQueue;
  * 汇总Task的处理结果
  *
 **
-* @author: Kevin
-* @官网: 	www.mimaxueyuan.com
-* @Q Q群:	660567408
-* @Email:	mimaxueyuan@163.com
+* 
+
 
 */
 public class Master {
