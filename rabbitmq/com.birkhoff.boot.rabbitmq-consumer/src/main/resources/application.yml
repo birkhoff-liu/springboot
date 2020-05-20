@@ -1,0 +1,12 @@
+server:
+  port: 8022
+spring:
+  #\u7ED9\u9879\u76EE\u6765\u4E2A\u540D\u5B57
+  application:
+    name: rabbitmq-consumer
+  #\u914D\u7F6ErabbitMq \u670D\u52A1\u5668
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
