@@ -12,7 +12,7 @@ public class WaitDemo1 {
                 synchronized (lock){
                     System.out.println(Thread.currentThread().getName()+" get Lock, waiting");
                     try {
-                        //Kevin提醒：如果达到2s还没有得到notify或者interrupt,则继续执行
+                        //如果达到2s还没有得到notify或者interrupt,则继续执行
                         lock.wait();
                     } catch (InterruptedException e) {
                         e.printStackTrace();
@@ -29,7 +29,7 @@ public class WaitDemo1 {
             public void run() {
                 synchronized (lock){
                     System.out.println(Thread.currentThread().getName()+" get Lock, t1.interrupt");
-                    //Kevin提醒：中断t1线程
+                    //中断t1线程
                     t1.interrupt();
                     System.out.println(Thread.currentThread().getName()+" release Lock,run over");
                 }

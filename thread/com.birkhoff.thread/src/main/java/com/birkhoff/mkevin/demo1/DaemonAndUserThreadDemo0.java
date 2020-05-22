@@ -16,8 +16,8 @@ public class DaemonAndUserThreadDemo0 {
             }
         });
 
-        //Kevin提醒：打开和关闭这个设置观察JVM进程是否终止
-        //thread.setDaemon(true);
+        //打开和关闭这个设置观察JVM进程是否终止
+//        thread.setDaemon(true);
 
         thread.start();
 

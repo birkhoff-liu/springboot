@@ -25,7 +25,7 @@ public class WaitDemo0 {
             @Override
             public void run() {
                 try {
-                    //Kevin提醒：修改这个数值的大小,来观察t1线程wailt(timeout)的效果
+                    //修改这个数值的大小,来观察t1线程wailt(timeout)的效果
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();

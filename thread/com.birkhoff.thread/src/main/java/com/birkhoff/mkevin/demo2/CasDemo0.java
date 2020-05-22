@@ -44,7 +44,7 @@ public class CasDemo0 {
                     success = atomic.compareAndSet(101,100,stamp,stamp+1);
                     System.out.println(Thread.currentThread().getName()+" set 101>100 使用错误的时间戳: " + success);
 
-                    //Kevin提醒：以下修改是成功的,因为使用了正确的版本号,正确的期待值
+                    //以下修改是成功的,因为使用了正确的版本号,正确的期待值
                     success = atomic.compareAndSet(100,101,stamp1,stamp1+1);
                     System.out.println(Thread.currentThread().getName()+" set 100>101 使用正确的时间戳: " + success);
 
