@@ -6,7 +6,7 @@ public class ThreadLocalDemo0 {
 
     public static void main(String[] args) {
 
-        tl.set("Kevin是一个自由讲师");
+        tl.set("birkhoff是一个自由讲师");
 
         Thread t0 = new Thread(new Runnable() {
             @Override

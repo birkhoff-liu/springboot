@@ -29,22 +29,22 @@ public class UnsafeDemo1 {
             long ageOffset = unsafe.objectFieldOffset(UnsafeDemo1.class.getDeclaredField("age"));
             //设置age的值为11
             unsafe.putInt(demo0,ageOffset,11);
-            System.out.println("KEVIN-1>>"+demo0.getAge());
+            System.out.println("birkhoff-1>>"+demo0.getAge());
             //获取age
             int age = unsafe.getInt(demo0,ageOffset);
-            System.out.println("KEVIN-1-getInt>>"+age);
+            System.out.println("birkhoff-1-getInt>>"+age);
             //验证CAS方法
             boolean result = unsafe.compareAndSwapInt(demo0,ageOffset,10,50);
-            System.out.println("KEVIN-2>>"+demo0.getAge()+","+result);
+            System.out.println("birkhoff-2>>"+demo0.getAge()+","+result);
             //验证CAS方法
             result = unsafe.compareAndSwapInt(demo0,ageOffset,11,100);
-            System.out.println("KEVIN-3>>"+demo0.getAge()+","+result);
+            System.out.println("birkhoff-3>>"+demo0.getAge()+","+result);
             //获取并设置
             age = unsafe.getAndSetInt(demo0,ageOffset,99);
-            System.out.println("KEVIN-4-getAndSetInt>>"+age+","+demo0.getAge());
+            System.out.println("birkhoff-4-getAndSetInt>>"+age+","+demo0.getAge());
             //获取并增加
             age = unsafe.getAndAddInt(demo0,ageOffset,100);
-            System.out.println("KEVIN-5-getAndAddInt>>"+age+","+demo0.getAge());
+            System.out.println("birkhoff-5-getAndAddInt>>"+age+","+demo0.getAge());
 
         } catch (NoSuchFieldException | IllegalAccessException e) {
             e.printStackTrace();

@@ -25,7 +25,7 @@ public class LongAccumulatorDemo1 {
         };
 
         LongAccumulator la = new LongAccumulator(lbn,1);
-        System.out.println("KEVIN初始值:"+la.longValue());
+        System.out.println("birkhoff初始值:"+la.longValue());
 
         List<Thread> list = new ArrayList<>();
         for(int i=0;i<1000;i++){

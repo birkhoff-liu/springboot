@@ -29,21 +29,21 @@ public class UnsafeDemo2 {
             int offset = unsafe.arrayBaseOffset(long[].class);
             int scale = unsafe.arrayIndexScale(long[].class);
 
-            System.out.println("KEVIN-1-offset>>"+offset);
-            System.out.println("KEVIN-2-scale>>"+scale);
+            System.out.println("birkhoff-1-offset>>"+offset);
+            System.out.println("birkhoff-2-scale>>"+scale);
 
             //获取salary字段偏移地址
             long salaryOffset = unsafe.objectFieldOffset(UnsafeDemo2.class.getDeclaredField("salary"));
             //设置数组
             long[] local = new long[]{3,4,5,6};
             unsafe.putObject(demo0,salaryOffset,local);
-            System.out.println("KEVIN-3-put>>"+ Arrays.toString(demo0.getSalary()));
+            System.out.println("birkhoff-3-put>>"+ Arrays.toString(demo0.getSalary()));
             //CAS成功
             boolean result = unsafe.compareAndSwapObject(demo0,salaryOffset,local,new long[]{9,8,7,6});
-            System.out.println("KEVIN-4-cas>>"+ Arrays.toString(demo0.getSalary())+","+result);
+            System.out.println("birkhoff-4-cas>>"+ Arrays.toString(demo0.getSalary())+","+result);
             //CAS失败
             result = unsafe.compareAndSwapObject(demo0,salaryOffset,new long[]{9,8,7,6},new long[]{3,3,3,3});
-            System.out.println("KEVIN-4-cas>>"+ Arrays.toString(demo0.getSalary())+","+result);
+            System.out.println("birkhoff-4-cas>>"+ Arrays.toString(demo0.getSalary())+","+result);
         } catch (NoSuchFieldException | IllegalAccessException e) {
             e.printStackTrace();
         }

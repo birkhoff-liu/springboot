@@ -26,20 +26,20 @@ public class UnsafeDemo4 {
 
             //获取静态字段的值
             int state1 = unsafe.getInt(demo0,stateOffset);
-            System.out.println("Kevin-1-getInt1>"+state1);
+            System.out.println("birkhoff-1-getInt1>"+state1);
 
             //获取静态字段的值
             state1 = unsafe.getInt(UnsafeDemo4.class,stateOffset);
-            System.out.println("Kevin-1-getInt2>"+state1);
+            System.out.println("birkhoff-1-getInt2>"+state1);
             //获取并且增加静态字段的值
             int state2 = unsafe.getAndAddInt(UnsafeDemo4.class,stateOffset,11);
-            System.out.println("Kevin-2-getAndAddInt>"+state2);
+            System.out.println("birkhoff-2-getAndAddInt>"+state2);
             //再次获取静态字段的值
             int state3 = unsafe.getInt(UnsafeDemo4.class,stateOffset);
-            System.out.println("Kevin-3-getInt>"+state3);
+            System.out.println("birkhoff-3-getInt>"+state3);
             //CAS操作
             boolean result = unsafe.compareAndSwapInt(UnsafeDemo4.class,stateOffset,11,12);
-            System.out.println("Kevin-4-getInt>"+UnsafeDemo4.state+","+result);
+            System.out.println("birkhoff-4-getInt>"+UnsafeDemo4.state+","+result);
         } catch (NoSuchFieldException | IllegalAccessException e) {
             e.printStackTrace();
         }

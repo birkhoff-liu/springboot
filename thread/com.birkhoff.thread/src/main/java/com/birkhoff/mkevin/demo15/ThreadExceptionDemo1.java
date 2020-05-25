@@ -54,7 +54,7 @@ public class ThreadExceptionDemo1 {
         @Override
         public Thread newThread(Runnable r) {
             Thread thread = new Thread(r);
-            thread.setName("KEVIN "+System.currentTimeMillis());
+            thread.setName("birkhoff "+System.currentTimeMillis());
             thread.setUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
                 @Override
                 public void uncaughtException(Thread t, Throwable e) {

@@ -26,7 +26,7 @@ public class DemoThread16 implements Runnable{
 	
 	//如果add方法是原子性的,那么每次的结果都是10的整数倍
 	/*synchronized*/
-	public synchronized static void add(){
+	public /*synchronized*/ static void add(){
 		sum.addAndGet(1);
 		try {
 			Thread.sleep(1000);

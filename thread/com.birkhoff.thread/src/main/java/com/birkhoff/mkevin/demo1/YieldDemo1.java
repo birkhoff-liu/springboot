@@ -31,7 +31,7 @@ public class YieldDemo1 extends Thread {
             demo.start();
         }
 
-        //Kevin提醒2:配合wait使用看效果
+        //提醒2:配合wait使用看效果
         synchronized (lock) {
             lock.notifyAll();
         }

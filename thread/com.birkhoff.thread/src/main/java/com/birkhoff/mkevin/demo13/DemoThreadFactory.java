@@ -25,7 +25,7 @@ class DemoThreadFactory implements ThreadFactory {
         }
         Thread thread = new Thread(r);
         //自定义线程名字
-        thread.setName("Kevin-Thread-" + thread.getName() + ":" + thread.getId());
+        thread.setName("birkhoff-Thread-" + thread.getName() + ":" + thread.getId());
         try {
             //模拟初始化时间
             Thread.sleep(ThreadLocalRandom.current().nextInt(1000));
