@@ -63,7 +63,7 @@ public class UnsafeDemo5 {
             unsafe.freeMemory(address);
             System.out.println("birkhoff-10-getLong:" + unsafe.getLong(address));
 
-            //Kevin: 重复释放会导致JRE异常
+            //提醒: 重复释放会导致JRE异常
             //unsafe.freeMemory(address);
 
 

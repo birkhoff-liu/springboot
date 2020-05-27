@@ -13,7 +13,7 @@ public class LockSupportDemo3 {
             @Override
             public void run() {
                 System.out.println(Thread.currentThread().getName()+" start run");
-                //KEVIN知识点：对比是否传入blocker有哪些区别
+                //知识点：对比是否传入blocker有哪些区别
                 //LockSupport.park();
                 LockSupport.park(this);
                 System.out.println(Thread.currentThread().getName()+" stop run");

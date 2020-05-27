@@ -50,7 +50,7 @@ public class InterruptDemo0 {
 
 
 
-//KEVIN：隐藏代码段
+//提醒:隐藏代码段
 //3.判断是否为中断状态,如果是中断则退出循环
 /*if(Thread.currentThread().isInterrupted()){
     System.out.println(Thread.currentThread().getName() + " interrupted");

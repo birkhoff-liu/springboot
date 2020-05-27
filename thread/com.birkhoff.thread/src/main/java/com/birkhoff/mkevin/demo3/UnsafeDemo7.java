@@ -29,11 +29,11 @@ public class UnsafeDemo7 {
                 @Override
                 public void run() {
                     System.out.println(Thread.currentThread().getName()+"-start" );
-                    //KEVIN:非绝对时间为纳秒
+                    //提醒:非绝对时间为纳秒
                     //unsafe.park(false,2000*1000000);
-                    //KEVIN：绝对时间为毫秒
+                    //提醒:绝对时间为毫秒
                     unsafe.park(true,System.currentTimeMillis()+2000);
-                    //KEVIN:配合interrupte查看效果
+                    //提醒:配合interrupte查看效果
                     if(Thread.currentThread().isInterrupted()){
                         System.out.println(Thread.currentThread().getName()+"-interrupte" );
                     }
@@ -45,9 +45,9 @@ public class UnsafeDemo7 {
 
             System.out.println(Thread.currentThread().getName()+"-run" );
 
-            //KEVIN：打开关闭查看效果
+            //提醒:打开关闭查看效果
             //unsafe.unpark(t);
-            //KEVIN：打开关闭查看效果
+            //提醒:打开关闭查看效果
             t.interrupt();
 
 

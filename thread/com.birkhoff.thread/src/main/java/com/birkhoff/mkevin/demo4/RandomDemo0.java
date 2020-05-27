@@ -61,7 +61,7 @@ class RandomDemo0Runner implements Runnable {
                 //KEIVN: 高并发CAS锁竞争
                 this.random.nextInt(50);
                 //System.out.println(Thread.currentThread().getName() + ">" + this.random.nextInt(50));
-                //KEVIN: 产生大量对象
+                //提醒: 产生大量对象
                 //System.out.println(Thread.currentThread().getName() + ">" + new Random().nextInt(50));
             }
             cd.countDown();

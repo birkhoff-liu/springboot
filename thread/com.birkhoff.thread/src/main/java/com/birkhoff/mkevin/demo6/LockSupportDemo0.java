@@ -13,11 +13,11 @@ public class LockSupportDemo0 {
             @Override
             public void run() {
                 System.out.println(Thread.currentThread().getName()+" start run");
-                //KEVIN知识点1: park()与unpark()需要成对儿使用
+                //知识点1: park()与unpark()需要成对儿使用
                 //LockSupport.park();
-                //KEVIN知识点2：parkUntil(deadline) 可以单独使用
+                //知识点2：parkUntil(deadline) 可以单独使用
                 //LockSupport.parkUntil(System.currentTimeMillis()+2000);
-                //KEVIN知识点3：parkNanos(nanos) 可以单独使用
+                //知识点3：parkNanos(nanos) 可以单独使用
                 LockSupport.parkNanos(1000000000);
                 System.out.println(Thread.currentThread().getName()+" stop run");
             }
@@ -27,7 +27,7 @@ public class LockSupportDemo0 {
 
         //Thread.sleep(2000);
 
-        //KEVIN知识点1: park()与unpark()需要成对儿使用
+        //知识点1: park()与unpark()需要成对儿使用
         //LockSupport.unpark(t);
 
         t.join();
