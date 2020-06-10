@@ -1,7 +1,6 @@
 package com.birkhoff.mkevin.demo4;
 
-import com.birkhoff.concurrent.demo.high.base.CyclicBarrierTest1;
-import com.birkhoff.concurrent.demo.high.executors.FixedThreadPoolTest;
+
 
 import java.util.Random;
 import java.util.concurrent.*;
@@ -19,15 +18,15 @@ public class RandomDemo0 {
         CountDownLatch cd = new CountDownLatch(100);
         CyclicBarrier barrier = new CyclicBarrier(100);
         ExecutorService executor = Executors.newFixedThreadPool(100);
-        for(int i=0;i<100;i++){
-            executor.submit(new RandomDemo0Runner(barrier,"thread"+i,random,cd));
+        for(int i = 0 ; i < 100 ; i++){
+            executor.submit(new RandomDemo0Runner(barrier,"thread" + i, random , cd));
         }
 
         cd.await();
 
-        long use = System.currentTimeMillis()-start;
+        long use = System.currentTimeMillis() - start;
 
-        System.out.println("main is over.."+use);
+        System.out.println("main is over.." + use);
 
         executor.shutdown();
     }
