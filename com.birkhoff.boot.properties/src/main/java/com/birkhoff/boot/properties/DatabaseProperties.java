@@ -1,4 +1,4 @@
-package com.birkhoff.boot.properties;
+package com.birkhoff.boot.dubbo;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;

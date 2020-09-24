@@ -1,4 +1,4 @@
-package com.birkhoff.boot.properties;
+package com.birkhoff.boot.dubbo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

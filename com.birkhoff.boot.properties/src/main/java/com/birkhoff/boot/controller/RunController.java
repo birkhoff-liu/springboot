@@ -1,6 +1,6 @@
 package com.birkhoff.boot.controller;
 
-import com.birkhoff.boot.properties.DatabaseProperties;
+import com.birkhoff.boot.dubbo.DatabaseProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
