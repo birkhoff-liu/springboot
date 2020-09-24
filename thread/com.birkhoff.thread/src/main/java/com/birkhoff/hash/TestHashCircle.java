@@ -8,13 +8,15 @@ public class TestHashCircle {
     // 机器节点IP前缀
     private static final String IP_PREFIX = "192.168.0.";
 
+    private static final int NODES_COUNT = 3;
+
     public static void main(String[] args) {
         // 每台真实机器节点上保存的记录条数
         Map<String, Integer> map = new HashMap<String, Integer>();
 
         // 真实机器节点, 模拟10台
         List<Node<String>> nodes = new ArrayList<Node<String>>();
-        for (int i = 1; i <= 10; i++) {
+        for (int i = 1; i <= NODES_COUNT; i++) {
             map.put(IP_PREFIX + i, 0); // 初始化记录
             Node<String> node = new Node<String>(IP_PREFIX + i, "node" + i);
             nodes.add(node);
@@ -22,7 +24,7 @@ public class TestHashCircle {
 
         IHashService iHashService = new HashService();
         // 每台真实机器引入100个虚拟节点
-        ConsistentHash<Node<String>> consistentHash = new ConsistentHash<Node<String>>(iHashService, 500, nodes);
+        ConsistentHash<Node<String>> consistentHash = new ConsistentHash<Node<String>>(iHashService, 10, nodes);
 
         // 将5000条记录尽可能均匀的存储到10台机器节点上
         for (int i = 0; i < 5000; i++) {
@@ -37,8 +39,8 @@ public class TestHashCircle {
         }
 
         // 打印每台真实机器节点保存的记录条数
-        for (int i = 1; i <= 10; i++) {
-            System.out.println(IP_PREFIX + i + "节点记录条数：" + map.get(IP_PREFIX + i));
+        for (int i = 1; i <= NODES_COUNT; i++) {
+            System.out.println(IP_PREFIX + i + " 节点记录条数：" + map.get(IP_PREFIX + i));
         }
     }
 }
