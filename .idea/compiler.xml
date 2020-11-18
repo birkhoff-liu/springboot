@@ -6,8 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="dubbo-provider" />
         <module name="aop" />
+        <module name="dubbo-provider" />
+        <module name="ujavaactors" />
+        <module name="guava-cache" />
+        <module name="webflux" />
+        <module name="thread" />
         <module name="dubbo-consumer" />
       </profile>
     </annotationProcessing>
@@ -15,6 +19,10 @@
       <module name="aop" target="1.8" />
       <module name="dubbo-consumer" target="1.8" />
       <module name="dubbo-provider" target="1.8" />
+      <module name="guava-cache" target="1.8" />
+      <module name="thread" target="1.8" />
+      <module name="ujavaactors" target="1.8" />
+      <module name="webflux" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -22,6 +30,10 @@
       <module name="aop" options="-parameters" />
       <module name="dubbo-consumer" options="-parameters" />
       <module name="dubbo-provider" options="-parameters" />
+      <module name="guava-cache" options="" />
+      <module name="thread" options="-parameters" />
+      <module name="ujavaactors" options="-parameters" />
+      <module name="webflux" options="-parameters" />
     </option>
   </component>
 </project>

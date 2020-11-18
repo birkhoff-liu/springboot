@@ -5,5 +5,8 @@
     <file url="file://$PROJECT_DIR$/com.birkhoff.boot.dubbo-consumer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/com.birkhoff.boot.dubbo-consumer/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/com.birkhoff.boot.dubbo-provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.birkhoff.boot.guava-cache/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/thread/com.birkhoff.thread/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/thread/com.birkhoff.ujavaactors/src/main/java" charset="UTF-8" />
   </component>
 </project>

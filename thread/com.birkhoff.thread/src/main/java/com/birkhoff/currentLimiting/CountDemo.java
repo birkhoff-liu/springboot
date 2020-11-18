@@ -5,6 +5,7 @@ import java.util.concurrent.Executors;
 
 /**
  * 限流-计数器方式
+ * 每秒只允许请求100个
  */
 public class CountDemo {
     private static int REQCOUNT = 0;
@@ -29,7 +30,7 @@ public class CountDemo {
     public static void main(String[] args) {
         ExecutorService executorService =  Executors.newFixedThreadPool(200);
         Work work = new Work();
-        for(int i = 0 ; i < 10000 ; i++){
+        for(int i = 0 ; i < 100000 ; i++){
             executorService.submit(work);
         }
         executorService.shutdown();

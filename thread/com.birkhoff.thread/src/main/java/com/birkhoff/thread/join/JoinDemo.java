@@ -29,12 +29,12 @@ public class JoinDemo {
         System.out.println(Thread.currentThread().getName() + " wait " + t1.getName() + " and " + t2.getName() + " run over!");
 
         //放开或注释该两行代码，查看join()的阻塞效果
-//        t1.join();
-//        t2.join();
+        t1.join();
+        t2.join();
 
         //放开或注释该两行代码，查看join(millis)的阻塞效果
-        t1.join(2000);
-        t2.join(2000);
+//        t1.join(2000);
+//        t2.join(2000);
 
         System.out.println("final : " + t1.getName() + " and " + t2.getName());
 

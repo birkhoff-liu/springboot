@@ -5,7 +5,11 @@
       <module fileurl="file://$PROJECT_DIR$/com.birkhoff.boot.aop/aop.iml" filepath="$PROJECT_DIR$/com.birkhoff.boot.aop/aop.iml" />
       <module fileurl="file://$PROJECT_DIR$/com.birkhoff.boot.dubbo-consumer/dubbo-consumer.iml" filepath="$PROJECT_DIR$/com.birkhoff.boot.dubbo-consumer/dubbo-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/com.birkhoff.boot.dubbo-provider/dubbo-provider.iml" filepath="$PROJECT_DIR$/com.birkhoff.boot.dubbo-provider/dubbo-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.birkhoff.boot.guava-cache/guava-cache.iml" filepath="$PROJECT_DIR$/com.birkhoff.boot.guava-cache/guava-cache.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/springboot.iml" filepath="$PROJECT_DIR$/.idea/springboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thread/com.birkhoff.thread/thread.iml" filepath="$PROJECT_DIR$/thread/com.birkhoff.thread/thread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thread/com.birkhoff.ujavaactors/ujavaactors.iml" filepath="$PROJECT_DIR$/thread/com.birkhoff.ujavaactors/ujavaactors.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.birkhoff.boot.guava-cache/webflux.iml" filepath="$PROJECT_DIR$/com.birkhoff.boot.guava-cache/webflux.iml" />
     </modules>
   </component>
 </project>

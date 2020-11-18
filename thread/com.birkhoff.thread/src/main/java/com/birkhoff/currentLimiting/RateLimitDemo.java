@@ -13,7 +13,7 @@ import java.util.concurrent.CountDownLatch;
  * 那么RateLimiter设置1000的速率后，就会每秒往桶里扔1000个令牌。
  */
 public class RateLimitDemo {
-    RateLimiter rateLimiter = RateLimiter.create(10);
+    RateLimiter rateLimiter = RateLimiter.create(100);
 
     public void doPay(String name) {
         if (rateLimiter.tryAcquire()) {
@@ -27,7 +27,7 @@ public class RateLimitDemo {
         RateLimitDemo app = new RateLimitDemo();
         CountDownLatch countDownLatch = new CountDownLatch(1);
         Random random = new Random(10);
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 2000; i++) {
             final int fi = i;
             Thread t = new Thread(() -> {
                 try {
