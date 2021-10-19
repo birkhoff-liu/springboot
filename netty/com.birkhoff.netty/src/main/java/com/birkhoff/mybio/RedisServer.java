@@ -1,4 +1,4 @@
-package com.birkhoff.mybio;
+package com.birkhoff.lambda;
 
 import java.io.IOException;
 import java.net.ServerSocket;
