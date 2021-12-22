@@ -1,6 +1,6 @@
 package com.birkhoff.boot.component;
 
-import com.birkhoff.boot.service.ReadService;
+import com.birkhoff.boot.book.service.ReadService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -13,7 +13,7 @@ public class ReadComponet {
     @Autowired
     private ReadService readService;
 
-    private final String PATH = "/Users/birkhoff/dev/workspace/opensource/pigx/pigx/pigx-auth";
+    private final String PATH = "/Users/birkhoffliu/dev/阅读";
 
     @PostConstruct
     public void operator() throws IOException {

@@ -5,7 +5,7 @@ import org.aspectj.lang.annotation.*;
 @Aspect
 public class MyAspect1 {
 
-   @Pointcut("execution(* com.birkhoff.boot.service.impl.UserServiceImpl.printUser(..))")
+   @Pointcut("execution(* com.birkhoff.boot.book.service.impl.UserServiceImpl.printUser(..))")
     public void pointCut(){
 
     }

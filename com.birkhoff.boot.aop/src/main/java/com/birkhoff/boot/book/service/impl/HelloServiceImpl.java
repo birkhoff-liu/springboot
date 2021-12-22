@@ -1,6 +1,6 @@
-package com.birkhoff.boot.service.impl;
+package com.birkhoff.boot.book.service.impl;
 
-import com.birkhoff.boot.service.HelloService;
+import com.birkhoff.boot.book.service.HelloService;
 
 public class HelloServiceImpl implements HelloService {
 

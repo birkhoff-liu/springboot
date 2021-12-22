@@ -1,6 +1,6 @@
 package com.birkhoff.boot.web;
 
-import com.birkhoff.boot.service.CacheService;
+import com.birkhoff.boot.book.service.CacheService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

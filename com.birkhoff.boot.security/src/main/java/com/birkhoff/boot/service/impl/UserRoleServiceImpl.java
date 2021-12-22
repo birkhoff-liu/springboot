@@ -1,4 +1,4 @@
-package com.birkhoff.boot.service.impl;
+package com.birkhoff.boot.book.service.impl;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ import com.birkhoff.boot.dao.RoleDao;
 import com.birkhoff.boot.dao.UserDao;
 import com.birkhoff.boot.pojo.DatabaseRole;
 import com.birkhoff.boot.pojo.DatabaseUser;
-import com.birkhoff.boot.service.UserRoleService;
+import com.birkhoff.boot.book.service.UserRoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;

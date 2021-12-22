@@ -1,4 +1,4 @@
-package com.birkhoff.boot.service;
+package com.birkhoff.boot.book.service;
 
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;

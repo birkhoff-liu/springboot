@@ -1,4 +1,4 @@
-package com.birkhoff.boot.service;
+package com.birkhoff.boot.book.service;
 
 import com.birkhoff.boot.pojo.DatabaseRole;
 import com.birkhoff.boot.pojo.DatabaseUser;

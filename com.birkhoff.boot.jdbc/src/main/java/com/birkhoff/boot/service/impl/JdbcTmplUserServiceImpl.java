@@ -1,4 +1,4 @@
-package com.birkhoff.boot.service.impl;
+package com.birkhoff.boot.book.service.impl;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -8,7 +8,7 @@ import java.util.List;
 
 import com.birkhoff.boot.enumeration.SexEnum;
 import com.birkhoff.boot.pojo.User;
-import com.birkhoff.boot.service.JdbcTmplUserService;
+import com.birkhoff.boot.book.service.JdbcTmplUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;

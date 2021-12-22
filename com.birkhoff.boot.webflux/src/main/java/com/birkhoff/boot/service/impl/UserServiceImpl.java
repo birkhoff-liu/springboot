@@ -1,8 +1,8 @@
-package com.birkhoff.boot.service.impl;
+package com.birkhoff.boot.book.service.impl;
 
 import com.birkhoff.boot.pojo.User;
 import com.birkhoff.boot.repository.UserRepository;
-import com.birkhoff.boot.service.UserService;
+import com.birkhoff.boot.book.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

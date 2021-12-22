@@ -1,4 +1,4 @@
-package com.birkhoff.boot.service.impl;
+package com.birkhoff.boot.book.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
