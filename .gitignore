@@ -1,3 +1,6 @@
 com.birkhoff.boot.archaius/.gitignore
 com.birkhoff.boot.archaius/mvnw
 com.birkhoff.boot.archaius/mvnw.cmd
+.idea/libraries/Maven__commons_codec_commons_codec_1_15.xml
+.idea/compiler.xml
+.idea/libraries/Maven__commons_codec_commons_codec_1_15.xml
